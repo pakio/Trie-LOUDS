@@ -30,7 +30,7 @@ public class LOUDS {
     int charIndex = countTrue(index);
     while(LBS.get(index)) {
       if (chars[wordOffset] == labels.get(charIndex)) {
-        if (isLeaf.get(index)) return SearchStatus.LEAF_FOUND;
+        if (isLeaf.get(index) && wordOffset + 1 == chars.length) return SearchStatus.LEAF_FOUND;
         else if (wordOffset + 1 == chars.length) return SearchStatus.PART_CONTAINS;
         return search(indexOfLabel(charIndex), chars, ++wordOffset);
       } else {
