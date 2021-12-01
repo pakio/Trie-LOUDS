@@ -33,5 +33,12 @@
       <artifactId>exec-maven-plugin</artifactId>
       <version>3.0.0</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.carrotsearch/java-sizeof -->
+    <dependency>
+      <groupId>com.carrotsearch</groupId>
+      <artifactId>java-sizeof</artifactId>
+      <version>0.0.5</version>
+    </dependency>
+
   </dependencies>
 </project>
